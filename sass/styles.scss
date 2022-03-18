@@ -1,0 +1,486 @@
+$first-color: #354F52;
+$second-color: #52796F;
+$third-color: #2F3E46;
+$background: #ECF0EF;
+$white: #ffffff;
+$title-color: #2F3E46;
+
+
+
+body{
+    margin: 0; 
+    background-color: $background;
+}
+html{
+    overflow-x: hidden; 
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    background-color: $first-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo{
+        padding-left: 2rem;
+        & a{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
+
+
+    &__enlaces{
+        padding-right: 2rem;
+
+        & ul{
+            display: flex;
+            justify-content: space-around;
+        
+            & li{
+                padding: 0 1rem;
+                list-style: none;
+
+
+                & a{
+                    padding: 9px;
+                    text-decoration: none;
+                    color: $white;
+
+                    &:hover{
+                        background-color: #354f521c;
+                        border-bottom: 2px solid $white;
+                    }
+
+                }
+
+
+            }
+        }
+        
+
+    }
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/industry.jpg") center center/cover no-repeat;
+    & h1{
+        margin: 50px 0;
+        font-size: 40px;
+        color: $white;
+    }
+    & p{
+        color: $white;
+        background-color:#2f3e4691;
+        padding:10px;
+    }
+    &__btn{
+        background-color: $third-color;
+        border: none;
+        margin-top: 35px;
+        padding: 10px;
+        border-radius: 5px;
+
+        & a{
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    & svg{
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+    &__fill{
+        fill: $background;
+    }
+
+}
+
+
+.about{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    & h2{
+        font-size: 40px;
+    }
+
+    &__text{
+        display: flex;
+        width: 80%;
+        & p{
+            margin: 0 20px;
+            text-align: justify;
+        }    
+    }
+    
+    &__btn{
+            background-color: $third-color;
+            border: none;
+            margin-top: 35px;
+            padding: 10px;
+            border-radius: 5px;
+            color: $white;
+
+        & a{
+            color: $white;
+            text-decoration: none;
+        }
+
+    }
+
+
+}
+
+
+.info{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    & h2{
+        font-size: 40px;
+    }
+
+    &__text{
+        display: flex;
+        width: 80%;
+        & p{
+            margin: 0 20px;
+            text-align: justify;
+        }    
+    }
+    
+    &__btn{
+        background-color: $third-color;
+        border: none;
+        margin-top: 35px;
+        padding: 10px;
+        border-radius: 5px;
+        color: $white;
+
+        & a{
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    &-divider{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        z-index: -1;
+
+    
+        & svg{
+            position: relative;
+            display: block;
+            width: 100vw;
+            height: 150px;
+            transform: rotateY(180deg);
+
+        }
+        &__fill{
+            fill: $first-color;
+        }
+    }
+
+}
+
+
+
+.portafolio{
+    height: 80vh;
+    background-color: $first-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & .articulo, .articulo--desfase{
+        width: 20%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & img{
+            width: 100%;
+            height: 100%;
+            background: rgb(29, 36, 31);
+
+        }   
+        & h3{
+            color: $white;
+        }
+
+        & .articulo__btn{
+
+            background-color: $third-color;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: $white;
+            & a{
+                color: $white;
+                text-decoration: none;
+            }
+        }
+        &:hover{
+            & img{
+                width: 120%;
+                height: 120%;
+                transition: .5s;
+            }
+        }
+    }
+    
+
+
+
+
+    & .articulo--desfase{
+        transform:translateY(-20%);
+    }
+    
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & h2{
+        font-size: 40px;
+        padding: 10px 20px;
+        border-bottom: 2px solid #000000;
+
+    }
+
+
+    &__form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .name-field, .mail-field, .tel-field{
+            width: 40%;
+            border: 1.5px solid #949494;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .text-field{
+            width:40%;
+            resize: none;
+            padding: 10px;
+        
+        }
+        .form-group {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 7px;
+        }
+        .form-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contacto__btn{
+            background-color: $third-color;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: $white;  
+            cursor: pointer;
+            & :hover{
+                background-color: $second-color;
+            }
+        }
+    }
+
+}
+
+.footer{
+    background-color: $third-color;
+    display: flex;
+
+    .foot{
+        margin: 20px;
+        width: 30%;
+
+    }
+    &__data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h4{
+            color: $white;
+            border-bottom: 2px solid $white;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        p{
+            color: $white;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+        a:hover{
+            color: $second-color;
+        }
+
+
+    }
+
+}
+
+
+
+@media (max-width: 1300px) {
+
+    .portafolio{
+        width: 100vw;
+        & .articulo, .articulo--desfase{
+            height: 60%;
+            margin: 20px 0;
+            
+        }
+        .articulo--desfase{
+            transform:translateY(0);
+
+        }
+    }
+
+
+
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+
+        .foot{
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+        }
+        &__mapa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+
+
+}
+
+
+
+
+
+@media (max-width: 850px) {
+
+    .portafolio{
+        height: auto;
+        padding-bottom: 20px;
+        flex-direction: column;
+        & .articulo, .articulo--desfase{
+              width: 50%;
+              height: 100%;
+        }
+
+    }
+    .about{
+        height: 60vh;
+        margin-bottom: 20px;
+        position: relative;
+        margin: 100px 0;
+        &__text{
+            flex-direction: column;
+            & p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .info{
+        height: 120vh;
+        margin-bottom: 30px;
+        position: relative;
+        &__text{
+            flex-direction: column;
+            & p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .nav__enlaces{
+       
+        ul{
+            flex-direction: column  ;
+        }
+    }
+
+
+
+
+}
+ @media (max-width: 450px) {
+
+    .name-field, .mail-field, .tel-field{
+        width: 60%;
+
+    }
+
+    .text-field{
+        width: 60%;
+    }
+
+
+
+
+
+}

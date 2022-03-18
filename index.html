@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>Landing | Home</title>
+</head>
+<body>
+    <header class="nav">
+       <div class="nav__logo">
+           <a href="#">LOGO <img src="" alt=""></a>
+       </div>
+       <div class="nav__enlaces">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+       </div>
+
+    </header>
+    <section class="banner">
+        
+        <h1>Landing Pages</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magnam, quasi ut exercitationem fugiat animi?</p>
+        <button class="banner__btn"><a href="#contacto">Contacta</a></button>
+        <div class="divider">
+            <svg data-name="Layer 1"  viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="divider__fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <div class="about__text">
+            <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magnam soluta dolore facilis assumenda voluptatibus qui et deserunt nostrum placeat, explicabo blanditiis iure mollitia illo quo. Possimus mollitia neque atque maiores nihil exercitationem eligendi. Voluptatum quis magni est adipisci natus?</p>
+            <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magnam soluta dolore facilis assumenda voluptatibus qui et deserunt nostrum placeat, explicabo blanditiis iure mollitia illo quo. Possimus mollitia neque atque maiores nihil exercitationem eligendi. Voluptatum quis magni est adipisci natus?</p>
+        </div>
+        <button class="about__btn"><a href="#contacto">Contacta</a></button>  
+    </section>
+    <section class="info" id="info">
+        <h2>Info</h2>
+        <div class="info__text">
+            <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magnam soluta dolore facilis assumenda voluptatibus qui et deserunt nostrum placeat, explicabo blanditiis iure mollitia illo quo. Possimus mollitia neque atque maiores nihil exercitationem eligendi. Voluptatum quis magni est adipisci natus?</p>
+            <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magnam soluta dolore facilis assumenda voluptatibus qui et deserunt nostrum placeat, explicabo blanditiis iure mollitia illo quo. Possimus mollitia neque atque maiores nihil exercitationem eligendi. Voluptatum quis magni est adipisci natus?</p>
+        </div>
+        <button class="info__btn"><a href="#contacto">Contacta</a></button>  
+
+    </section>
+    <div data-aos="fade-up">
+        <div class="info-divider" >
+            <svg data-name="Layer 1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="info-divider__fill"></path>
+            </svg>
+        </div>
+        <section class="portafolio" id="portafolio" >
+            <div class="articulo">
+                <img src="./img/robot.jpg" alt="">
+                <h3>Hover Me</h3>
+                <button class="articulo__btn"><a href="#contacto">Visitar</a></button>
+            </div>
+            <div class="artiulo articulo--desfase">
+                <img src="./img/robot.jpg" alt="">
+                <h3>Hover Me</h3>
+                <button class="articulo__btn"><a href="#contacto">Visitar</a></button>
+            </div>
+            <div class="articulo">
+                <img src="./img/robot.jpg" alt="">
+                <h3>Hover Me</h3>
+                <button class="articulo__btn"><a href="#contacto">Visitar</a></button>
+            </div>
+        </section>
+    </div>
+
+    <section class="contacto" id="contacto" data-aos="fade-up">
+        <h2>Formulario</h2>
+        <form id="contact-form" class="contacto__form" name="contact-form" method="post" action="correo.php">
+            <div class="form-group">
+                <input type="text" name="nombre" class="form-control name-field" required= "required" placeholder="Nombre * ">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" class="form-control mail-field" required= "required" placeholder="Email * ">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="telefono" class="form-control tel-field" placeholder="Teléfono ">
+            </div>
+            <div class="form-group">
+                <textarea name="mensaje" id="message" required="required" class="form-control text-field" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="form-group form-btn">
+            <button type="submit" class="contacto__btn">Enviar</button>
+            </div>
+
+        </form>
+    </section>
+    <footer class="footer" data-aos="fade-up">
+        <div class="footer__logo foot">
+
+        </div>
+        <div class="footer__mapa foot">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48568.163864830516!2d-3.898194506405367!3d40.463975618359676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4184ecb204803f%3A0xcafdc908f78db4ef!2sMajadahonda%2C%20Madrid!5e0!3m2!1ses!2ses!4v1636217656421!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer__data foot">
+            <h4>Direccion:</h4>
+            <p>C/Calle avenida</p>
+            <p>28220 Majadahonda, Madrid</p>
+            <h4>Horario:</h4>
+            <p>LUNES A VIERNES: 8:00 – 18:00</p> 
+            <h4>Teléfono:</h4>
+            <a href="tel:+34666666666">+34 666 66 66 66</a>
+            <a href="mailto:info@info.es"><i class="fas fa-envelope"></i>info@info.es</a>
+            <a href="legal.html" class="legal"><i></i>Aviso legal</a>
+            <a href="privacidad.html" class="legal"><i></i>Politica de privacidad</a>
+        
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>   
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
